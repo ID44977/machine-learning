@@ -91,8 +91,10 @@ def numerical_gradient(f, x):
 
 batch_size=100
 
-train_dataset=dsets.MNIST(root='m1/pymnist',train=True,transform=None,download=True)
-test_dataset=dsets.MNIST(root='m1/pymnist',train=False,transform=None,download=True)
+#train_dataset=dsets.MNIST(root='m1/pymnist',train=True,transform=None,download=True)
+#test_dataset=dsets.MNIST(root='m1/pymnist',train=False,transform=None,download=True)
+train_dataset=dsets.MNIST(root='ml/pymnist',train=True,transform=None,download=True)
+test_dataset=dsets.MNIST(root='ml/pymnist',train=False,transform=None,download=True)
 
 #加载数据
 train_loader=torch.utils.data.DataLoader(dataset=train_dataset,batch_size=batch_size,shuffle=True)
