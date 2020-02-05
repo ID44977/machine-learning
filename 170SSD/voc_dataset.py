@@ -169,7 +169,7 @@ for i in range(len(vocClassName)):
 print(vocClassID)
 allTrainingData = []  # 第167行，该行后面的代码为从VOC2007中读取数据，会在调用voc_dataset.py文件时立即执行
 allTestingData = []
-allFloder = ["./VOCdevkit/VOC2007"]  # 我们把从VOC网站下载的数据放到本地，只使用VOC2007做实验
+allFloder = ["ml/VOCdevkit/VOC2007"]  # 我们把从VOC网站下载的数据放到本地，只使用VOC2007做实验
 for floder in allFloder:
     imagePath = join(floder, "JPEGImages")
     infoPath = join(floder, "Annotations")
