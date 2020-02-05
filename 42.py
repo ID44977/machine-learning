@@ -56,8 +56,8 @@ def centralized(x_test,mean_image):
     x_test -= mean_image
     return x_test
 
-train_dataset = dsets.CIFAR10(root='m1/pycifar',train=True,download=True)
-test_dataset = dsets.CIFAR10(root='m1/pycifar',train=False,download=True)
+train_dataset = dsets.CIFAR10(root='c:/ml/pycifar',train=True,download=True)
+test_dataset = dsets.CIFAR10(root='c:/ml/pycifar',train=False,download=True)
 
 #加载数据
 train_loader=torch.utils.data.DataLoader(dataset=train_dataset,batch_size=batch_size,shuffle=True)
